@@ -1,0 +1,16 @@
+<h2>LogIn de Usuario</h2>
+<div>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input #email type="text" class="form-control" formControlName="email">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input #password type="password" class="form-control" formControlName="password">
+    </div>
+    <input (click)="onSubmit(email.value, password.value)" type="submit" value="Login">
+    <p>¿No tienes cuenta? <a style="color: blueviolet; cursor: pointer;" (click)="register()">
+      Registrate
+    </a></p>
+</div>
+<button class="btn btn-info" (click)="onClick()">Login With Google</button>

@@ -1,0 +1,15 @@
+<h2>Registro de usuario</h2>
+<div>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input #email type="text" class="form-control" formControlName="email">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input #password type="password" class="form-control" formControlName="password">
+    </div>
+    <input (click)="onSubmit(email.value,password.value)" type="submit" value="Registrar">
+    <p>¿Tienes cuenta? <a style="color: blueviolet; cursor: pointer;" (click)="login()">
+      Inicia Sesion
+    </a></p>
+</div>
